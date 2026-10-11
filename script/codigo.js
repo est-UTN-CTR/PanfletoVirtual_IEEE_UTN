@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll("[data-page]");
 
 async function loadPage(name) {
   try {
-    const res = await fetch(`/content/${name}.html`);
+    const res = await fetch(`content/${name}.html`);
     if (!res.ok) throw new Error(res.status);
     panel.innerHTML = await res.text();
     location.hash = name; // shareable/back-button friendly
