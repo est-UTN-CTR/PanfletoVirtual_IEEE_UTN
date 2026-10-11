@@ -5,22 +5,6 @@ Gris claro: #6D7788
 Amarillo: #E0D900
 */
 
-/*Sección de media para teléfonos*/
-@media (max-width: 600px) {
-  div.infoblock {
-    flex-direction: column;
-  }
-  div.side_panel {
-    width: 100%;
-    flex-direction: row;
-    height: auto;
-  }
-  div.main_panel {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 body {
   background-color: #06229df5;
 }
@@ -230,4 +214,40 @@ main.main_panel input:focus,
 main.main_panel textarea:focus {
   border-color: #0482f1; /* your light blue as focus accent */
   outline: none;
+}
+
+@media (max-width: 600px) {
+  div.infoblock {
+    flex-direction: column;
+  }
+
+  nav.side_panel {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+
+  main.main_panel {
+    width: 100%;
+    margin-left: 0;
+    min-width: 0;
+  }
+
+  button.top_panel_btn {
+    width: auto;
+    min-width: 70px;
+    height: 6vh;
+    font-size: medium;
+    padding: 0 8px;
+    flex: 1;
+  }
+
+  button.side_panel_btn {
+    width: 40vw;   /* % of screen WIDTH, not height */
+    height: 12vh;
+    font-size: large;
+    margin: 0.5rem;
+  }
 }
