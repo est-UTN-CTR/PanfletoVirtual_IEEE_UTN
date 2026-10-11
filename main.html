@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@1,700&display=swap"
+      rel="Stylesheet"
+    />
+    <link rel="Stylesheet" href="/style/visual.css" />
+    <title>IEEE - Sede UTN</title>
+  </head>
+  <body>
+    <!--Panel Superior, logo y botones de información-->
+    <div class="top_panel">
+      <div class="top_panel_logo">
+        <img src="/ilustraciones/UTN_logo.png" />
+      </div>
+      Panfleto Digital de propuesta para la rama estudiantil IEEE UTN Sede
+      Central
+      <button class="top_panel_btn" data-page="inicio">Inicio</button>
+      <button class="top_panel_btn" data-page="contactos">Contactos</button>
+      <button class="top_panel_btn" data-page="recursos">Recursos</button>
+    </div>
+
+    <div class="infoblock">
+      <!--Panel latera, botones extra que poseen una difuminación más oscura en fondo cuando preisonados-->
+      <nav class="side_panel">
+        <button class="side_panel_btn" data-page="porque">
+          Proposito de creación de rama
+        </button>
+        <button class="side_panel_btn" data-page="beneficios">
+          Beneficios
+        </button>
+        <button class="side_panel_btn" data-page="capsYgrupos">
+          Capítulos y grupos de afinidad
+        </button>
+      </nav>
+
+      <!--Sección principal con información que se actualiza en base a qué se le haga click-->
+      <main class="main_panel" id="main_panel" aria-live="polite"></main>
+    </div>
+
+    <script src="/script/codigo.js"></script>
+  </body>
+</html>
